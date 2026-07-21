@@ -108,7 +108,7 @@ const es = {
   gallery: {
     eyebrow: 'Galería',
     title: 'El rancho en 360°',
-    subtitle: 'Haz scroll y gira la galería. Cada imagen es una promesa de lo que te espera.',
+    subtitle: 'Arrastra para girar la galería y toca una foto para verla en grande.',
     items: [
       { title: 'El salto', sub: 'Agua fresca de montaña' },
       { title: 'A caballo', sub: 'Senderos del Este' },
@@ -300,7 +300,7 @@ const en: typeof es = {
   gallery: {
     eyebrow: 'Gallery',
     title: 'The ranch in 360°',
-    subtitle: 'Scroll to spin the gallery. Every image is a promise of what awaits you.',
+    subtitle: 'Drag to spin the gallery and tap any photo to see it full size.',
     items: [
       { title: 'The falls', sub: 'Fresh mountain water' },
       { title: 'On horseback', sub: 'Eastern trails' },
