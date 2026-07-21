@@ -1,7 +1,7 @@
 import { MapPin } from 'lucide-react'
 import { InstagramIcon as Instagram } from '@/components/icons'
 import { useLang } from '@/i18n'
-import { ADDRESS, INSTAGRAM_URL, INSTAGRAM_HANDLE, whatsappLink } from '@/config'
+import { ADDRESS, PHONES, INSTAGRAM_URL, INSTAGRAM_HANDLE, whatsappLink } from '@/config'
 
 export function Footer() {
   const { t } = useLang()
@@ -50,6 +50,10 @@ export function Footer() {
               <li className="flex items-start gap-2.5">
                 <MapPin size={17} className="mt-0.5 shrink-0 text-sand-300" />
                 {ADDRESS}
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-sand-300">✆</span>
+                {PHONES.join(' / ')}
               </li>
               <li>
                 <a

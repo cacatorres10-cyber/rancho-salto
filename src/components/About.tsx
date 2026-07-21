@@ -17,7 +17,7 @@ export function About() {
               <div className="overflow-hidden rounded-3xl">
                 <img
                   src={IMG.aboutMain}
-                  alt="Bosque tropical del rancho"
+                  alt="Visitantes en la escalinata entre palmeras del rancho"
                   className="aspect-[4/5] w-full object-cover transition-transform duration-700 hover:scale-105"
                   loading="lazy"
                 />
@@ -25,13 +25,13 @@ export function About() {
               <div className="absolute -bottom-8 -right-4 md:-right-8 w-44 md:w-60 overflow-hidden rounded-2xl border-4 border-background shadow-2xl">
                 <img
                   src={IMG.aboutSecondary}
-                  alt="Luz entre las hojas"
+                  alt="Madre e hijo en el columpio del rancho"
                   className="aspect-square w-full object-cover"
                   loading="lazy"
                 />
               </div>
               <span className="absolute -top-5 -left-3 md:-left-6 rounded-full bg-jungle-800 px-5 py-2 text-xs font-semibold uppercase tracking-widest text-sand-200 shadow-lg">
-                Anamuya, RD
+                Anamuyita, RD
               </span>
             </div>
           </Reveal>

@@ -1,6 +1,6 @@
-import { MapPin, Clock, ExternalLink } from 'lucide-react'
+import { MapPin, Phone, Clock, ExternalLink } from 'lucide-react'
 import { useLang } from '@/i18n'
-import { ADDRESS, MAPS_EMBED_URL, MAPS_LINK } from '@/config'
+import { ADDRESS, PHONES, MAPS_EMBED_URL, MAPS_LINK } from '@/config'
 import { Reveal } from '@/components/Reveal'
 
 export function LocationSection() {
@@ -22,6 +22,10 @@ export function LocationSection() {
               <p className="mt-4 flex items-start gap-2.5 text-jungle-800 font-medium">
                 <MapPin size={20} className="mt-0.5 shrink-0 text-jungle-600" />
                 {ADDRESS}
+              </p>
+              <p className="mt-2 flex items-start gap-2.5 text-jungle-800 font-medium">
+                <Phone size={20} className="mt-0.5 shrink-0 text-jungle-600" />
+                {PHONES.join(' / ')}
               </p>
             </Reveal>
 

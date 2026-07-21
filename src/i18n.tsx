@@ -16,20 +16,21 @@ const es = {
     title1: 'Rancho',
     title2: 'Salto Taíno',
     subtitle:
-      'Río, montaña, caballos y sabor criollo entre Higüey y Punta Cana. Un refugio ecológico para desconectarte de todo y reconectar con lo esencial.',
+      'Río, piscinas, zipline, caballos y sabor criollo entre Higüey y Punta Cana. Un rancho ecológico y turístico para desconectarte de todo y reconectar con lo esencial.',
     cta1: 'Reserva por WhatsApp',
     cta2: 'Descubre el rancho',
     scroll: 'Desliza para explorar',
   },
   marquee: [
-    'Piscina natural',
+    'Piscinas',
+    'Zipline',
     'Paseos a caballo',
+    'Buggy',
     'Day pass',
-    'Camping bajo las estrellas',
-    'Casa del árbol',
+    'Casas de campo',
     'Buffet criollo',
-    'Senderismo',
     'Río Anamuya',
+    'Camping bajo las estrellas',
   ],
   about: {
     eyebrow: 'El Rancho',
@@ -69,8 +70,8 @@ const es = {
         text: 'Refréscate en las aguas del río Anamuya y descubre sus rincones escondidos.',
       },
       {
-        title: 'Senderismo',
-        text: 'Rutas entre palmas, cacao y café con vistas que no salen en las postales.',
+        title: 'Zipline entre montañas',
+        text: 'Vuela sobre el verde de Anamuyita con arnés, casco y guías que te acompañan en todo momento.',
       },
       {
         title: 'Buffet criollo',
@@ -94,9 +95,9 @@ const es = {
         tag: 'Confort',
       },
       {
-        title: 'Casa del árbol',
-        text: 'Duerme entre las copas de los árboles. La favorita de los aventureros.',
-        tag: 'Única',
+        title: 'Casa de campo',
+        text: 'Cabañas de madera con terraza y vista a la montaña. Puedes incluir desayuno, almuerzo y cena.',
+        tag: 'Favorita',
       },
       {
         title: 'Camping y glamping',
@@ -110,14 +111,14 @@ const es = {
     title: 'El rancho en 360°',
     subtitle: 'Arrastra para girar la galería y toca una foto para verla en grande.',
     items: [
-      { title: 'El salto', sub: 'Agua fresca de montaña' },
-      { title: 'A caballo', sub: 'Senderos del Este' },
-      { title: 'La piscina', sub: 'El corazón del day pass' },
-      { title: 'Casa del árbol', sub: 'Dormir entre las copas' },
-      { title: 'Camping', sub: 'Noches de fogata' },
-      { title: 'Sabor criollo', sub: 'Cocina de leña' },
-      { title: 'Senderos verdes', sub: 'Palmas y montaña' },
-      { title: 'Atardeceres', sub: 'El cielo del Este' },
+      { title: 'Zipline', sub: 'Adrenalina entre palmas' },
+      { title: 'La piscina', sub: 'Agua fresca todo el día' },
+      { title: 'En familia', sub: 'Recuerdos que se quedan' },
+      { title: 'Los jardines', sub: 'Senderos entre palmeras' },
+      { title: 'Buena vibra', sub: 'Grupos y excursiones' },
+      { title: 'Entre amigos', sub: 'El plan perfecto' },
+      { title: 'Pura diversión', sub: 'Chapuzones sin fin' },
+      { title: 'Los peques', sub: 'Diversión para todos' },
     ],
   },
   video: {
@@ -148,6 +149,10 @@ const es = {
     eyebrow: 'Preguntas frecuentes',
     title: 'Antes de venir',
     items: [
+      {
+        q: '¿Cuánto cuesta la entrada?',
+        a: 'La entrada al day pass es RD$350 por persona y la opción con almuerzo ronda RD$800. El hospedaje con las tres comidas incluidas ronda RD$3,000 por persona. Las tarifas pueden variar, confírmalas por WhatsApp al momento de reservar.',
+      },
       {
         q: '¿Necesito reservar para el day pass?',
         a: 'Recomendamos reservar por WhatsApp, sobre todo los fines de semana y días feriados. Así te confirmamos disponibilidad y tarifas al momento.',
@@ -208,20 +213,21 @@ const en: typeof es = {
     title1: 'Rancho',
     title2: 'Salto Taíno',
     subtitle:
-      'River, mountains, horses and Dominican flavor between Higüey and Punta Cana. An eco retreat to disconnect from everything and reconnect with what matters.',
+      'River, pools, zipline, horses and Dominican flavor between Higüey and Punta Cana. An eco ranch to disconnect from everything and reconnect with what matters.',
     cta1: 'Book via WhatsApp',
     cta2: 'Discover the ranch',
     scroll: 'Scroll to explore',
   },
   marquee: [
-    'Natural pool',
+    'Pools',
+    'Zipline',
     'Horseback riding',
+    'Buggy',
     'Day pass',
-    'Camping under the stars',
-    'Treehouse',
+    'Country houses',
     'Creole buffet',
-    'Hiking',
     'Anamuya River',
+    'Camping under the stars',
   ],
   about: {
     eyebrow: 'The Ranch',
@@ -261,8 +267,8 @@ const en: typeof es = {
         text: 'Cool off in the Anamuya River and discover its hidden spots.',
       },
       {
-        title: 'Hiking',
-        text: 'Trails through palms, cacao and coffee with views you will not find on postcards.',
+        title: 'Mountain zipline',
+        text: 'Fly over the green of Anamuyita with harness, helmet and guides by your side the whole way.',
       },
       {
         title: 'Creole buffet',
@@ -286,9 +292,9 @@ const en: typeof es = {
         tag: 'Comfort',
       },
       {
-        title: 'Treehouse',
-        text: 'Sleep among the treetops. The favorite of adventurers.',
-        tag: 'Unique',
+        title: 'Country house',
+        text: 'Wooden cabins with a terrace and mountain views. Breakfast, lunch and dinner can be included.',
+        tag: 'Favorite',
       },
       {
         title: 'Camping and glamping',
@@ -302,14 +308,14 @@ const en: typeof es = {
     title: 'The ranch in 360°',
     subtitle: 'Drag to spin the gallery and tap any photo to see it full size.',
     items: [
-      { title: 'The falls', sub: 'Fresh mountain water' },
-      { title: 'On horseback', sub: 'Eastern trails' },
-      { title: 'The pool', sub: 'The heart of the day pass' },
-      { title: 'Treehouse', sub: 'Sleeping in the canopy' },
-      { title: 'Camping', sub: 'Bonfire nights' },
-      { title: 'Creole flavor', sub: 'Firewood cooking' },
-      { title: 'Green trails', sub: 'Palms and mountains' },
-      { title: 'Sunsets', sub: 'The eastern sky' },
+      { title: 'Zipline', sub: 'Adrenaline in the palms' },
+      { title: 'The pool', sub: 'Fresh water all day' },
+      { title: 'Family time', sub: 'Memories that stay' },
+      { title: 'The gardens', sub: 'Paths among palm trees' },
+      { title: 'Good vibes', sub: 'Groups and excursions' },
+      { title: 'With friends', sub: 'The perfect plan' },
+      { title: 'Pure fun', sub: 'Endless splashing' },
+      { title: 'The little ones', sub: 'Fun for everyone' },
     ],
   },
   video: {
@@ -340,6 +346,10 @@ const en: typeof es = {
     eyebrow: 'FAQ',
     title: 'Before you come',
     items: [
+      {
+        q: 'How much is the entrance fee?',
+        a: 'The day pass entrance is RD$350 per person and the option with lunch is around RD$800. Lodging with all three meals included is around RD$3,000 per person. Rates may vary, please confirm via WhatsApp when booking.',
+      },
       {
         q: 'Do I need to book the day pass?',
         a: 'We recommend booking via WhatsApp, especially on weekends and holidays. We will confirm availability and rates right away.',

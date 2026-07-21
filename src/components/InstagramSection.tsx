@@ -1,10 +1,10 @@
 import { InstagramIcon as Instagram } from '@/components/icons'
 import { useLang } from '@/i18n'
-import { IMG } from '@/assets/media'
+import { IMG, VIDEO } from '@/assets/media'
 import { INSTAGRAM_URL, INSTAGRAM_HANDLE } from '@/config'
 import { Reveal } from '@/components/Reveal'
 
-const igImages = [IMG.canoe, IMG.campfire, IMG.mist, IMG.forestLight]
+const igImages = [IMG.ig1, IMG.ig2, IMG.ig3, IMG.ig4]
 
 export function InstagramSection() {
   const { t } = useLang()
@@ -35,30 +35,56 @@ export function InstagramSection() {
           </Reveal>
         </div>
 
-        <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4">
-          {igImages.map((src, i) => (
-            <Reveal key={src} delay={i * 0.08}>
-              <a
-                href={INSTAGRAM_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="group relative block aspect-square overflow-hidden rounded-2xl"
-              >
-                <img
-                  src={src}
-                  alt={`Instagram ${INSTAGRAM_HANDLE}`}
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 flex items-center justify-center bg-jungle-950/0 transition-colors duration-500 group-hover:bg-jungle-950/50">
-                  <Instagram
-                    size={30}
-                    className="text-sand-50 opacity-0 scale-75 transition-all duration-500 group-hover:opacity-100 group-hover:scale-100"
+        <div className="mt-12 grid gap-4 lg:grid-cols-[300px_1fr]">
+          <Reveal>
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="group relative block overflow-hidden rounded-2xl aspect-[9/16] max-w-[300px] mx-auto lg:mx-0"
+            >
+              <video
+                className="absolute inset-0 h-full w-full object-cover"
+                src={VIDEO.reel}
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-jungle-950/80 to-transparent p-4 pt-10">
+                <span className="flex items-center gap-2 text-sm font-semibold text-sand-50">
+                  <Instagram size={16} />
+                  {INSTAGRAM_HANDLE}
+                </span>
+              </div>
+            </a>
+          </Reveal>
+
+          <div className="grid grid-cols-2 gap-4">
+            {igImages.map((src, i) => (
+              <Reveal key={src} delay={i * 0.08}>
+                <a
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group relative block h-full min-h-[180px] overflow-hidden rounded-2xl"
+                >
+                  <img
+                    src={src}
+                    alt={`Instagram ${INSTAGRAM_HANDLE}`}
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    loading="lazy"
                   />
-                </div>
-              </a>
-            </Reveal>
-          ))}
+                  <div className="absolute inset-0 flex items-center justify-center bg-jungle-950/0 transition-colors duration-500 group-hover:bg-jungle-950/50">
+                    <Instagram
+                      size={30}
+                      className="text-sand-50 opacity-0 scale-75 transition-all duration-500 group-hover:opacity-100 group-hover:scale-100"
+                    />
+                  </div>
+                </a>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </div>
     </section>

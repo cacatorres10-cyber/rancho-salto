@@ -4,7 +4,7 @@ import { IMG } from '@/assets/media'
 import { whatsappLink } from '@/config'
 import { Reveal } from '@/components/Reveal'
 
-const lodgingImages = [IMG.room, IMG.treehouse, IMG.camping]
+const lodgingImages = [IMG.room, IMG.casaCampo, IMG.camping]
 
 export function Lodging() {
   const { t, lang } = useLang()
