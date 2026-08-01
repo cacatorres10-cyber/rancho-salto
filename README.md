@@ -13,12 +13,27 @@ npm run build     # build de producao em dist/
 npm run preview   # serve o build (http://localhost:4173)
 ```
 
-## O que personalizar antes de publicar
+## Mídia
 
-1. **WhatsApp**: em `src/config.ts`, troque `WHATSAPP_NUMBER` (placeholder `18090000000`) pelo número real, formato internacional sem `+`.
-2. **Fotos e vídeos**: `src/assets/media.ts` centraliza todas as URLs. Hoje são stock (Unsplash/Pexels) no clima do rancho; troque pelas fotos/vídeos reais do Instagram quando tiver os arquivos (pode colocar em `public/` e usar caminhos locais).
-3. **Textos**: todo o copy ES/EN está em `src/i18n.tsx` (objetos `es` e `en`).
-4. **Distâncias/endereço**: `src/config.ts` e a seção `location` do i18n (valores aproximados marcados com ±).
+Praticamente todo o material é real: fotos do Instagram [@ranchosaltotainord](https://www.instagram.com/ranchosaltotainord) e recortes dos vídeos que o próprio rancho enviou. Tudo fica em `public/gallery/` e é referenciado por `src/assets/media.ts`.
+
+- `hero-drone.mp4`: sobrevoo de drone do rancho, fundo do topo do site
+- `video-rancho.mp4`: palapa e ponte pênsil sobre o rio
+- `reel.mp4`: reel vertical do Instagram
+
+Os vídeos originais enviados pelo rancho ficam em `media-fonte/` (fora do git, pesados demais). Para gerar novos recortes, use ffmpeg com um mosaico de contato para achar o trecho:
+
+```bash
+ffmpeg -i media-fonte/video.mp4 -vf "fps=1/4,scale=300:-1,tile=5x5" -frames:v 1 sheet.jpg
+```
+
+**Único ponto ainda com foto de banco de imagens**: o card "Paseos a caballo". Quando houver foto de cavalos do rancho, troque `IMG.horse` em `src/assets/media.ts`.
+
+## Outros ajustes
+
+- **Textos**: todo o copy ES/EN está em `src/i18n.tsx` (objetos `es` e `en`).
+- **Contato**: `src/config.ts` (WhatsApp, telefones, endereço, mapa).
+- **Preços**: estão no FAQ do i18n, com a ressalva de confirmar por WhatsApp.
 
 ## Estrutura
 
