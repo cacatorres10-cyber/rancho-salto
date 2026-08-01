@@ -1,6 +1,7 @@
 import { MapPin, Phone, Clock, ExternalLink } from 'lucide-react'
 import { useLang } from '@/i18n'
 import { ADDRESS, PHONES, MAPS_EMBED_URL, MAPS_LINK } from '@/config'
+import { IMG } from '@/assets/media'
 import { Reveal } from '@/components/Reveal'
 
 export function LocationSection() {
@@ -57,11 +58,19 @@ export function LocationSection() {
           </div>
 
           <Reveal delay={0.15}>
+            <div className="mb-4 overflow-hidden rounded-3xl border border-border shadow-lg">
+              <img
+                src={IMG.entrada}
+                alt="Entrada del Rancho Salto Taíno desde la carretera"
+                className="h-48 w-full object-cover md:h-56"
+                loading="lazy"
+              />
+            </div>
             <div className="overflow-hidden rounded-3xl border border-border shadow-xl">
               <iframe
                 src={MAPS_EMBED_URL}
                 title="Mapa Rancho Salto Taíno"
-                className="h-[420px] w-full lg:h-[520px]"
+                className="h-[320px] w-full lg:h-[380px]"
                 style={{ border: 0 }}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

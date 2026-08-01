@@ -1,7 +1,8 @@
 // Fotos y videos del rancho.
-// Las fotos en /gallery son REALES, tomadas del Instagram @ranchosaltotainord
-// con autorizacion del dueño. Las URLs de Unsplash/Pexels que quedan son stock
-// de apoyo para escenas sin foto propia (hero, caballos, comida, camping).
+// Casi todo el material es REAL: fotos del Instagram @ranchosaltotainord y
+// fotogramas de los videos que envio el propio rancho (autorizado por el dueño).
+// Los originales de video quedan fuera de public/ en la carpeta media-fonte.
+// Solo queda stock de apoyo para el paseo a caballo (sin foto propia todavia).
 
 const u = (id: string, w = 1600) =>
   `https://images.unsplash.com/${id}?w=${w}&auto=format&fit=crop&q=80`
@@ -9,16 +10,26 @@ const u = (id: string, w = 1600) =>
 const local = (file: string) => `${import.meta.env.BASE_URL}gallery/${file}`
 
 export const IMG = {
-  // Stock de apoyo
-  heroPoster: u('photo-1469474968028-56623f02e42e', 1920),
+  // Unico stock que queda: paseo a caballo
   horse: u('photo-1553284965-83fd3e82fa5a', 900),
-  food: u('photo-1555939594-58d7cb561ad1', 900),
-  campfire: u('photo-1517824806704-9040b037703b', 900),
-  room: u('photo-1566073771259-6a8506099945', 900),
-  camping: u('photo-1504280390367-361c6d9f38f4', 900),
-  poolWide: u('photo-1540541338287-41700207dee6', 1600),
 
-  // Fotos reales del rancho (Instagram)
+  // Vistas aereas y del terreno (fotogramas de los videos del rancho)
+  aereaRancho: local('aerea-rancho.jpg'),
+  aereaPiscinas: local('aerea-piscinas.jpg'),
+  atardecerAereo: local('atardecer-aereo.jpg'),
+  entrada: local('entrada.jpg'),
+  puente: local('puente.jpg'),
+  comedor: local('comedor.jpg'),
+  palapa: local('palapa.jpg'),
+  habitacion: local('habitacion.jpg'),
+  posterVideo: local('poster-video.jpg'),
+
+  // Fotos que envio el rancho
+  camping1: local('camping-1.jpg'),
+  camping2: local('camping-2.jpg'),
+  casaArbolNoche: local('casa-arbol-noche.jpg'),
+
+  // Fotos del Instagram
   aboutMain: local('grupo-palmeras.jpg'),
   aboutSecondary: local('columpio.jpg'),
   pool: local('pool-complex.jpg'),
@@ -40,10 +51,10 @@ export const IMG = {
 }
 
 export const VIDEO = {
-  // Cascada en la selva (Pexels, uso libre)
-  hero: 'https://videos.pexels.com/video-files/5744454/5744454-hd_1920_1080_24fps.mp4',
-  // Paseo a caballo en campo verde (Pexels, uso libre)
-  feature: 'https://videos.pexels.com/video-files/18319293/18319293-hd_1920_1080_30fps.mp4',
-  // Reel real del rancho (Instagram @ranchosaltotainord)
+  // Sobrevuelo del rancho (video propio del rancho)
+  hero: local('hero-drone.mp4'),
+  // Palapa y puente colgante sobre el rio (video propio del rancho)
+  feature: local('video-rancho.mp4'),
+  // Reel del Instagram @ranchosaltotainord
   reel: local('reel.mp4'),
 }

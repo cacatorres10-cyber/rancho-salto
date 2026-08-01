@@ -19,7 +19,7 @@ export function Hero() {
           <video
             className="h-full w-full object-cover"
             src={VIDEO.hero}
-            poster={IMG.heroPoster}
+            poster={IMG.aereaRancho}
             autoPlay
             muted
             loop
@@ -28,8 +28,8 @@ export function Hero() {
           />
         ) : (
           <img
-            src={IMG.heroPoster}
-            alt="Naturaleza del Rancho Salto Taíno"
+            src={IMG.aereaRancho}
+            alt="Vista aérea del Rancho Salto Taíno"
             className="h-full w-full object-cover animate-slow-zoom"
           />
         )}

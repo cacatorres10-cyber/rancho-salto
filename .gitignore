@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Originales de video enviados por el rancho (no se publican)
+media-fonte/

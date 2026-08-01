@@ -12,7 +12,7 @@ const es = {
     reservar: 'Reservar',
   },
   hero: {
-    eyebrow: 'Anamuya · Higüey · República Dominicana',
+    eyebrow: 'Anamuyita · Higüey · República Dominicana',
     title1: 'Rancho',
     title2: 'Salto Taíno',
     subtitle:
@@ -35,7 +35,7 @@ const es = {
   about: {
     eyebrow: 'El Rancho',
     title: 'Un refugio taíno entre montañas',
-    p1: 'En el corazón de Anamuya, a minutos de Higüey y a menos de una hora de Punta Cana, Rancho Salto Taíno es un santuario ecológico donde el tiempo corre más lento.',
+    p1: 'En el corazón de Anamuyita, a minutos de Higüey y a menos de una hora de Punta Cana, Rancho Salto Taíno es un santuario ecológico donde el tiempo corre más lento.',
     p2: 'Jardines tropicales, río de agua fresca, animales de campo y la hospitalidad dominicana de siempre. Ven por el día con tu familia o quédate a dormir bajo un cielo lleno de estrellas.',
     features: [
       {
@@ -66,8 +66,8 @@ const es = {
         text: 'Cabalga por senderos de montaña con guías locales que conocen cada rincón.',
       },
       {
-        title: 'Río y pozas naturales',
-        text: 'Refréscate en las aguas del río Anamuya y descubre sus rincones escondidos.',
+        title: 'Río y puente colgante',
+        text: 'Cruza el puente colgante y refréscate en las aguas verdes del río, entre piedras y vegetación.',
       },
       {
         title: 'Zipline entre montañas',
@@ -78,8 +78,8 @@ const es = {
         text: 'Sancocho, chivo guisado, arroz y habichuelas. Cocina de leña con sazón de verdad.',
       },
       {
-        title: 'Fogata y noche de estrellas',
-        text: 'Cuando cae el sol, el rancho se llena de historias alrededor del fuego.',
+        title: 'Palapa para grupos',
+        text: 'Un salón abierto con techo de cana para celebraciones, excursiones y grupos grandes.',
       },
     ],
   },
@@ -90,8 +90,8 @@ const es = {
     cta: 'Consultar disponibilidad',
     items: [
       {
-        title: 'Habitación estándar',
-        text: 'Privada, sencilla y cómoda para dos personas, con el canto del campo de fondo.',
+        title: 'Casitas de colores',
+        text: 'Casitas de madera pintadas a mano, sencillas y cómodas, con el canto del campo de fondo.',
         tag: 'Confort',
       },
       {
@@ -111,20 +111,20 @@ const es = {
     title: 'El rancho en 360°',
     subtitle: 'Arrastra para girar la galería y toca una foto para verla en grande.',
     items: [
+      { title: 'El rancho desde el aire', sub: 'Piscinas entre palmeras' },
       { title: 'Zipline', sub: 'Adrenalina entre palmas' },
       { title: 'La piscina', sub: 'Agua fresca todo el día' },
+      { title: 'Camping', sub: 'Tiendas listas en el verde' },
+      { title: 'La palapa', sub: 'Para grupos y celebraciones' },
+      { title: 'Atardecer', sub: 'El cielo de Anamuyita' },
       { title: 'En familia', sub: 'Recuerdos que se quedan' },
       { title: 'Los jardines', sub: 'Senderos entre palmeras' },
-      { title: 'Buena vibra', sub: 'Grupos y excursiones' },
-      { title: 'Entre amigos', sub: 'El plan perfecto' },
-      { title: 'Pura diversión', sub: 'Chapuzones sin fin' },
-      { title: 'Los peques', sub: 'Diversión para todos' },
     ],
   },
   video: {
     eyebrow: 'Siente el rancho',
     title: 'Esto no se cuenta, se vive',
-    text: 'Un adelanto de lo que te espera en Anamuya. El resto lo descubres tú.',
+    text: 'Un adelanto de lo que te espera en Anamuyita. El resto lo descubres tú.',
     cta: 'Ver más en Instagram',
   },
   instagram: {
@@ -136,7 +136,7 @@ const es = {
   location: {
     eyebrow: 'Ubicación',
     title: 'Fácil de llegar, difícil de olvidar',
-    text: 'Estamos en la carretera principal de Anamuya, entre Higüey y Punta Cana, en la provincia La Altagracia.',
+    text: 'Estamos en la carretera principal de Anamuyita, entre Higüey y Punta Cana, en la provincia La Altagracia.',
     distances: [
       { place: 'Higüey', time: '± 20 min' },
       { place: 'Aeropuerto de Punta Cana', time: '± 45 min' },
@@ -159,7 +159,7 @@ const es = {
       },
       {
         q: '¿Qué incluye el alojamiento?',
-        a: 'Depende de la opción que elijas: habitación, casa del árbol o camping. Escríbenos y te enviamos tarifas y disponibilidad actualizadas.',
+        a: 'Depende de la opción que elijas: casita, casa de campo o camping. La casa de campo puede incluir desayuno, almuerzo y cena. Escríbenos y te enviamos tarifas y disponibilidad actualizadas.',
       },
       {
         q: '¿Es un plan para niños?',
@@ -171,7 +171,7 @@ const es = {
       },
       {
         q: '¿Cómo llego al rancho?',
-        a: 'Estamos en la carretera principal de Anamuya, entre Higüey y Punta Cana. En la sección de ubicación tienes el mapa con la ruta exacta.',
+        a: 'Estamos en la carretera principal de Anamuyita, entre Higüey y Punta Cana. En la sección de ubicación tienes el mapa con la ruta exacta.',
       },
     ],
   },
@@ -209,7 +209,7 @@ const en: typeof es = {
     reservar: 'Book now',
   },
   hero: {
-    eyebrow: 'Anamuya · Higüey · Dominican Republic',
+    eyebrow: 'Anamuyita · Higüey · Dominican Republic',
     title1: 'Rancho',
     title2: 'Salto Taíno',
     subtitle:
@@ -232,7 +232,7 @@ const en: typeof es = {
   about: {
     eyebrow: 'The Ranch',
     title: 'A Taíno refuge in the mountains',
-    p1: 'In the heart of Anamuya, minutes from Higüey and less than an hour from Punta Cana, Rancho Salto Taíno is an eco sanctuary where time slows down.',
+    p1: 'In the heart of Anamuyita, minutes from Higüey and less than an hour from Punta Cana, Rancho Salto Taíno is an eco sanctuary where time slows down.',
     p2: 'Tropical gardens, a fresh water river, farm animals and true Dominican hospitality. Come for the day with your family or stay overnight under a sky full of stars.',
     features: [
       {
@@ -263,8 +263,8 @@ const en: typeof es = {
         text: 'Ride mountain trails with local guides who know every corner.',
       },
       {
-        title: 'River and natural pools',
-        text: 'Cool off in the Anamuya River and discover its hidden spots.',
+        title: 'River and hanging bridge',
+        text: 'Cross the hanging bridge and cool off in the green waters of the river, among rocks and greenery.',
       },
       {
         title: 'Mountain zipline',
@@ -275,8 +275,8 @@ const en: typeof es = {
         text: 'Sancocho, stewed goat, rice and beans. Firewood cooking with real seasoning.',
       },
       {
-        title: 'Bonfire and starry nights',
-        text: 'When the sun goes down, the ranch fills with stories around the fire.',
+        title: 'Palapa for groups',
+        text: 'An open hall with a thatched roof for celebrations, excursions and large groups.',
       },
     ],
   },
@@ -287,8 +287,8 @@ const en: typeof es = {
     cta: 'Check availability',
     items: [
       {
-        title: 'Standard room',
-        text: 'Private, simple and comfortable for two, with the sounds of the countryside in the background.',
+        title: 'Colorful cabins',
+        text: 'Hand painted wooden cabins, simple and comfortable, with the sounds of the countryside in the background.',
         tag: 'Comfort',
       },
       {
@@ -308,20 +308,20 @@ const en: typeof es = {
     title: 'The ranch in 360°',
     subtitle: 'Drag to spin the gallery and tap any photo to see it full size.',
     items: [
+      { title: 'The ranch from above', sub: 'Pools among palm trees' },
       { title: 'Zipline', sub: 'Adrenaline in the palms' },
       { title: 'The pool', sub: 'Fresh water all day' },
+      { title: 'Camping', sub: 'Tents ready on the grass' },
+      { title: 'The palapa', sub: 'For groups and celebrations' },
+      { title: 'Sunset', sub: 'The sky over Anamuyita' },
       { title: 'Family time', sub: 'Memories that stay' },
       { title: 'The gardens', sub: 'Paths among palm trees' },
-      { title: 'Good vibes', sub: 'Groups and excursions' },
-      { title: 'With friends', sub: 'The perfect plan' },
-      { title: 'Pure fun', sub: 'Endless splashing' },
-      { title: 'The little ones', sub: 'Fun for everyone' },
     ],
   },
   video: {
     eyebrow: 'Feel the ranch',
     title: 'You do not tell it, you live it',
-    text: 'A preview of what awaits you in Anamuya. The rest is yours to discover.',
+    text: 'A preview of what awaits you in Anamuyita. The rest is yours to discover.',
     cta: 'See more on Instagram',
   },
   instagram: {
@@ -333,7 +333,7 @@ const en: typeof es = {
   location: {
     eyebrow: 'Location',
     title: 'Easy to reach, hard to forget',
-    text: 'We are on the main road of Anamuya, between Higüey and Punta Cana, in La Altagracia province.',
+    text: 'We are on the main road of Anamuyita, between Higüey and Punta Cana, in La Altagracia province.',
     distances: [
       { place: 'Higüey', time: '± 20 min' },
       { place: 'Punta Cana Airport', time: '± 45 min' },
@@ -356,7 +356,7 @@ const en: typeof es = {
       },
       {
         q: 'What does lodging include?',
-        a: 'It depends on the option you choose: room, treehouse or camping. Write to us and we will send updated rates and availability.',
+        a: 'It depends on the option you choose: cabin, country house or camping. The country house can include breakfast, lunch and dinner. Write to us and we will send updated rates and availability.',
       },
       {
         q: 'Is it a good plan for kids?',
@@ -368,7 +368,7 @@ const en: typeof es = {
       },
       {
         q: 'How do I get to the ranch?',
-        a: 'We are on the main road of Anamuya, between Higüey and Punta Cana. Check the location section for the exact route.',
+        a: 'We are on the main road of Anamuyita, between Higüey and Punta Cana. Check the location section for the exact route.',
       },
     ],
   },

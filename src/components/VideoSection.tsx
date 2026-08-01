@@ -15,7 +15,7 @@ export function VideoSection() {
         <video
           className="absolute inset-0 h-full w-full object-cover"
           src={VIDEO.feature}
-          poster={IMG.poolWide}
+          poster={IMG.posterVideo}
           autoPlay
           muted
           loop
@@ -24,8 +24,8 @@ export function VideoSection() {
         />
       ) : (
         <img
-          src={IMG.poolWide}
-          alt="Aguas del rancho"
+          src={IMG.posterVideo}
+          alt="Puente colgante sobre el río del rancho"
           className="absolute inset-0 h-full w-full object-cover animate-slow-zoom"
         />
       )}

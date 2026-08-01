@@ -2,7 +2,14 @@ import { useLang } from '@/i18n'
 import { IMG } from '@/assets/media'
 import { Reveal } from '@/components/Reveal'
 
-const expImages = [IMG.pool, IMG.horse, IMG.river, IMG.zipline, IMG.food, IMG.campfire]
+const expImages = [
+  IMG.aereaPiscinas,
+  IMG.horse,
+  IMG.puente,
+  IMG.zipline,
+  IMG.comedor,
+  IMG.palapa,
+]
 
 export function Experiences() {
   const { t } = useLang()

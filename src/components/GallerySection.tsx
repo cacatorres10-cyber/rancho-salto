@@ -4,14 +4,14 @@ import { IMG } from '@/assets/media'
 import { Reveal } from '@/components/Reveal'
 
 const galleryImages = [
+  IMG.aereaPiscinas,
   IMG.galZipline2,
   IMG.galPiscina,
+  IMG.camping1,
+  IMG.palapa,
+  IMG.atardecerAereo,
   IMG.galFamilia,
   IMG.galJardines,
-  IMG.galVibra,
-  IMG.galAmigos,
-  IMG.galSplash,
-  IMG.galPeques,
 ]
 
 export function GallerySection() {
