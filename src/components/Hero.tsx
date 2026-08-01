@@ -5,6 +5,11 @@ import { useLang } from '@/i18n'
 import { whatsappLink } from '@/config'
 import { IMG, VIDEO } from '@/assets/media'
 
+// En pantallas pequeñas se sirve una version mas ligera del sobrevuelo.
+// Se decide una sola vez al montar para no recargar el video al rotar.
+const heroSource =
+  typeof window !== 'undefined' && window.innerWidth < 768 ? VIDEO.heroSmall : VIDEO.hero
+
 export function Hero() {
   const { t } = useLang()
   const [videoOk, setVideoOk] = useState(true)
@@ -18,7 +23,7 @@ export function Hero() {
         {videoOk ? (
           <video
             className="h-full w-full object-cover"
-            src={VIDEO.hero}
+            src={heroSource}
             poster={IMG.aereaRancho}
             autoPlay
             muted

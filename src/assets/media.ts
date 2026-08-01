@@ -53,6 +53,8 @@ export const IMG = {
 export const VIDEO = {
   // Sobrevuelo del rancho (video propio del rancho)
   hero: local('hero-drone.mp4'),
+  // Version ligera del sobrevuelo para pantallas pequeñas
+  heroSmall: local('hero-drone-sm.mp4'),
   // Palapa y puente colgante sobre el rio (video propio del rancho)
   feature: local('video-rancho.mp4'),
   // Reel del Instagram @ranchosaltotainord
