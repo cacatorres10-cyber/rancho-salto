@@ -35,11 +35,15 @@ export function Navbar() {
       )}
     >
       <div className="mx-auto max-w-7xl px-5 md:px-8 flex items-center justify-between">
-        <a href="#inicio" className="flex items-center gap-2 text-sand-100">
-          <span className="text-2xl">🌴</span>
-          <span className="font-display text-lg md:text-xl font-semibold tracking-wide">
-            Salto <span className="italic font-medium text-sand-300">Taíno</span>
-          </span>
+        <a href="#inicio" className="flex items-center" aria-label="Rancho Salto Taíno">
+          <img
+            src={`${import.meta.env.BASE_URL}logo-light.png`}
+            alt="Rancho Salto Taíno"
+            className={cn(
+              'w-auto transition-all duration-500 drop-shadow-[0_2px_10px_rgba(0,0,0,0.55)]',
+              scrolled ? 'h-12 md:h-14' : 'h-14 md:h-16',
+            )}
+          />
         </a>
 
         <nav className="hidden lg:flex items-center gap-7">

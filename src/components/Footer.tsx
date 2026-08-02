@@ -20,11 +20,12 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <a href="#inicio" className="flex items-center gap-2 text-sand-100">
-              <span className="text-2xl">🌴</span>
-              <span className="font-display text-xl font-semibold">
-                Salto <span className="italic font-medium text-sand-300">Taíno</span>
-              </span>
+            <a href="#inicio" className="inline-block" aria-label="Rancho Salto Taíno">
+              <img
+                src={`${import.meta.env.BASE_URL}logo-light.png`}
+                alt="Rancho Salto Taíno"
+                className="h-16 w-auto"
+              />
             </a>
             <p className="mt-4 max-w-xs text-sm leading-relaxed">{t.footer.tagline}</p>
           </div>
