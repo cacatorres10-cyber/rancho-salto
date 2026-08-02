@@ -130,7 +130,7 @@ const es = {
   instagram: {
     eyebrow: 'Comunidad',
     title: 'Míralo por los ojos de quienes ya vinieron',
-    text: 'Aquí no hay fotos de catálogo. Son las de la gente que llegó por un día y se fue pidiendo quedarse.',
+    text: 'Más de 12,000 personas siguen el día a día del rancho. Aquí no hay fotos de catálogo: son las de la gente que llegó por un día y se fue pidiendo quedarse.',
     cta: 'Seguir',
   },
   location: {
@@ -327,7 +327,7 @@ const en: typeof es = {
   instagram: {
     eyebrow: 'Community',
     title: 'See it through the eyes of people who came',
-    text: 'No catalog photos here. These are from people who came for a day and left asking to stay.',
+    text: 'More than 12,000 people follow the ranch day to day. No catalog photos here: these are from people who came for a day and left asking to stay.',
     cta: 'Follow',
   },
   location: {
