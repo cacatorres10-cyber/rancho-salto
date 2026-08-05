@@ -41,6 +41,14 @@ ffmpeg -i media-fonte/video.mp4 -vf "fps=1/4,scale=300:-1,tile=5x5" -frames:v 1 
 
 **Único ponto ainda com foto de banco de imagens**: o card "Paseos a caballo". Quando houver foto de cavalos do rancho, troque `IMG.horse` em `src/assets/media.ts`.
 
+## Álbum de fotos
+
+Todas as fotos do rancho ficam numa lista só, em [src/data/gallery.ts](src/data/gallery.ts). Dela saem tanto a galeria giratória (as 8 primeiras) quanto o álbum completo, que abre pelo botão "Ver todas las fotos" na seção do vídeo do rancho.
+
+Para adicionar foto: copie o arquivo para `public/gallery/` e acrescente uma linha no array, com as legendas em ES e EN. Ela aparece sozinha no álbum. Se a foto for vertical e cortar mal, use `pos: '50% 25%'` para ajustar o enquadramento.
+
+As fotos das excursões não entram aqui: elas ficam em `src/data/excursions.ts`.
+
 ## Excursões
 
 As excursões ficam em [src/data/excursions.ts](src/data/excursions.ts). Cada uma vira um card enxuto (foto, preço, botão) e um modal com todos os detalhes, então adicionar excursões não deixa a página mais carregada.
