@@ -142,6 +142,15 @@ const es = {
     text: 'El río, la palapa y el puente colgante. Y esto es apenas lo que cabe en una pantalla.',
     cta: 'Ver más en Instagram',
   },
+  album: {
+    eyebrow: 'Álbum del rancho',
+    title: 'Todas las fotos en un solo lugar',
+    count: 'fotos del rancho',
+    cta: 'Ver todas las fotos',
+    close: 'Cerrar álbum',
+    prev: 'Foto anterior',
+    next: 'Foto siguiente',
+  },
   instagram: {
     eyebrow: 'Comunidad',
     title: 'Míralo por los ojos de quienes ya vinieron',
@@ -352,6 +361,15 @@ const en: typeof es = {
     title: 'You do not tell it, you live it',
     text: 'The river, the palapa and the hanging bridge. And this is only what fits on a screen.',
     cta: 'See more on Instagram',
+  },
+  album: {
+    eyebrow: 'Ranch album',
+    title: 'Every photo in one place',
+    count: 'photos of the ranch',
+    cta: 'See all the photos',
+    close: 'Close album',
+    prev: 'Previous photo',
+    next: 'Next photo',
   },
   instagram: {
     eyebrow: 'Community',

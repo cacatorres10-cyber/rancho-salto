@@ -4,6 +4,7 @@ import { useLang } from '@/i18n'
 import { IMG, VIDEO } from '@/assets/media'
 import { INSTAGRAM_URL } from '@/config'
 import { Reveal } from '@/components/Reveal'
+import { PhotoAlbumButton } from '@/components/PhotoAlbum'
 
 export function VideoSection() {
   const { t } = useLang()
@@ -40,15 +41,18 @@ export function VideoSection() {
             {t.video.title}
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-lg text-sand-100/85">{t.video.text}</p>
-          <a
-            href={INSTAGRAM_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-9 inline-flex items-center gap-2.5 rounded-full bg-sand-50 px-8 py-4 font-semibold text-jungle-950 shadow-xl hover:scale-105 transition-transform"
-          >
-            <Instagram size={20} />
-            {t.video.cta}
-          </a>
+          <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <PhotoAlbumButton className="inline-flex items-center gap-2.5 rounded-full bg-sand-50 px-8 py-4 font-semibold text-jungle-950 shadow-xl transition-transform hover:scale-105" />
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2.5 rounded-full border border-sand-100/40 px-8 py-4 font-semibold text-sand-50 transition-colors hover:bg-sand-100/10"
+            >
+              <Instagram size={20} />
+              {t.video.cta}
+            </a>
+          </div>
         </Reveal>
       </div>
     </section>

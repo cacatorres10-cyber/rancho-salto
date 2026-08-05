@@ -1,18 +1,7 @@
 import { ThreeDPhotoCarousel } from '@/components/ui/3d-carousel'
 import { useLang } from '@/i18n'
-import { IMG } from '@/assets/media'
+import { CAROUSEL_PHOTOS } from '@/data/gallery'
 import { Reveal } from '@/components/Reveal'
-
-const galleryImages = [
-  IMG.aereaPiscinas,
-  IMG.galZipline2,
-  IMG.galPiscina,
-  IMG.camping1,
-  IMG.palapa,
-  IMG.atardecerAereo,
-  IMG.galFamilia,
-  IMG.galJardines,
-]
 
 export function GallerySection() {
   const { t } = useLang()
@@ -34,7 +23,7 @@ export function GallerySection() {
       </div>
       <Reveal delay={0.1}>
         <div className="mt-8">
-          <ThreeDPhotoCarousel images={galleryImages} />
+          <ThreeDPhotoCarousel images={CAROUSEL_PHOTOS.map((p) => p.src)} />
         </div>
       </Reveal>
     </section>
