@@ -4,6 +4,7 @@ import { Hero } from '@/components/Hero'
 import { Marquee } from '@/components/Marquee'
 import { About } from '@/components/About'
 import { Experiences } from '@/components/Experiences'
+import { Excursions } from '@/components/Excursions'
 import { Lodging } from '@/components/Lodging'
 import { GallerySection } from '@/components/GallerySection'
 import { VideoSection } from '@/components/VideoSection'
@@ -23,6 +24,7 @@ function App() {
         <Marquee />
         <About />
         <Experiences />
+        <Excursions />
         <Lodging />
         <GallerySection />
         <VideoSection />

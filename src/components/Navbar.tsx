@@ -19,6 +19,7 @@ export function Navbar() {
   const links = [
     { href: '#rancho', label: t.nav.rancho },
     { href: '#experiencias', label: t.nav.experiencias },
+    { href: '#excursiones', label: t.nav.excursiones },
     { href: '#alojamiento', label: t.nav.alojamiento },
     { href: '#galeria', label: t.nav.galeria },
     { href: '#ubicacion', label: t.nav.ubicacion },

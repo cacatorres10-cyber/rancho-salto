@@ -5,6 +5,7 @@ const es = {
   nav: {
     rancho: 'El Rancho',
     experiencias: 'Experiencias',
+    excursiones: 'Excursiones',
     alojamiento: 'Alojamiento',
     galeria: 'Galería',
     ubicacion: 'Ubicación',
@@ -82,6 +83,20 @@ const es = {
         text: 'Techo de cana, lámpara encendida y espacio de sobra. Aquí caben la excursión, el cumpleaños y la familia completa.',
       },
     ],
+  },
+  excursions: {
+    eyebrow: 'Excursiones',
+    title: 'Y si quieres ir más lejos',
+    subtitle:
+      'Salidas que organizamos desde el rancho. Toca una para ver todo lo que incluye.',
+    details: 'Ver detalles',
+    includes: 'Qué incluye',
+    bring: 'Qué llevar',
+    book: 'Reservar por WhatsApp',
+    perPerson: 'por persona',
+    askPrice: 'Consultar precio',
+    close: 'Cerrar',
+    priceNote: 'Precios sujetos a cambio. Te confirmamos todo por WhatsApp antes de reservar.',
   },
   lodging: {
     eyebrow: 'Alojamiento',
@@ -202,6 +217,7 @@ const en: typeof es = {
   nav: {
     rancho: 'The Ranch',
     experiencias: 'Experiences',
+    excursiones: 'Tours',
     alojamiento: 'Lodging',
     galeria: 'Gallery',
     ubicacion: 'Location',
@@ -279,6 +295,19 @@ const en: typeof es = {
         text: 'Thatched roof, lights on and room to spare. The excursion, the birthday and the whole family fit in here.',
       },
     ],
+  },
+  excursions: {
+    eyebrow: 'Tours',
+    title: 'And if you want to go further',
+    subtitle: 'Day trips we organize from the ranch. Tap one to see everything it includes.',
+    details: 'See details',
+    includes: 'What is included',
+    bring: 'What to bring',
+    book: 'Book via WhatsApp',
+    perPerson: 'per person',
+    askPrice: 'Ask for price',
+    close: 'Close',
+    priceNote: 'Prices subject to change. We confirm everything on WhatsApp before booking.',
   },
   lodging: {
     eyebrow: 'Lodging',
