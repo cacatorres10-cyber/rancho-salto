@@ -41,6 +41,14 @@ ffmpeg -i media-fonte/video.mp4 -vf "fps=1/4,scale=300:-1,tile=5x5" -frames:v 1 
 
 **Único ponto ainda com foto de banco de imagens**: o card "Paseos a caballo". Quando houver foto de cavalos do rancho, troque `IMG.horse` em `src/assets/media.ts`.
 
+## Excursões
+
+As excursões ficam em [src/data/excursions.ts](src/data/excursions.ts). Cada uma vira um card enxuto (foto, preço, botão) e um modal com todos os detalhes, então adicionar excursões não deixa a página mais carregada.
+
+Para adicionar uma nova: copie um bloco inteiro do array, troque o `id`, a imagem e os textos (ES e EN). A partir da terceira excursão a grade passa sozinha para três colunas.
+
+**Os preços são valores de referência do aemitours.com e precisam ser confirmados com o rancho.** Se preferir não mostrar valor, use `price: null` e o card exibe "Consultar precio".
+
 ## Outros ajustes
 
 - **Textos**: todo o copy ES/EN está em `src/i18n.tsx` (objetos `es` e `en`).
