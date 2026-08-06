@@ -38,6 +38,15 @@ body {
   border-radius: 8px;
 }
 
+/* Carrusel: se desliza con el dedo sin que se vea la barra de scroll */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 .text-outline {
   -webkit-text-stroke: 1px rgba(243, 236, 221, 0.55);
   color: transparent;

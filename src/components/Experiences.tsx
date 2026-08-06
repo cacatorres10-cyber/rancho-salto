@@ -1,6 +1,9 @@
+import { useCallback, useEffect, useRef, useState } from 'react'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useLang } from '@/i18n'
 import { IMG } from '@/assets/media'
 import { Reveal } from '@/components/Reveal'
+import { cn } from '@/lib/utils'
 
 const expImages = [
   IMG.aereaPiscinas,
@@ -13,6 +16,44 @@ const expImages = [
 
 export function Experiences() {
   const { t } = useLang()
+  const scroller = useRef<HTMLDivElement>(null)
+  const [index, setIndex] = useState(0)
+  const [atStart, setAtStart] = useState(true)
+  const [atEnd, setAtEnd] = useState(false)
+
+  // Sigue la posicion del carrusel para los puntos y las flechas
+  const onScroll = useCallback(() => {
+    const el = scroller.current
+    if (!el) return
+    const card = el.firstElementChild as HTMLElement | null
+    if (!card) return
+    const step = card.offsetWidth + 20 // ancho de tarjeta + gap
+    setIndex(Math.round(el.scrollLeft / step))
+    setAtStart(el.scrollLeft < 8)
+    setAtEnd(el.scrollLeft + el.clientWidth >= el.scrollWidth - 8)
+  }, [])
+
+  useEffect(() => {
+    onScroll()
+    window.addEventListener('resize', onScroll)
+    return () => window.removeEventListener('resize', onScroll)
+  }, [onScroll])
+
+  const scrollBy = (dir: 1 | -1) => {
+    const el = scroller.current
+    if (!el) return
+    const card = el.firstElementChild as HTMLElement | null
+    if (!card) return
+    el.scrollBy({ left: dir * (card.offsetWidth + 20), behavior: 'smooth' })
+  }
+
+  const goTo = (i: number) => {
+    const el = scroller.current
+    if (!el) return
+    const card = el.firstElementChild as HTMLElement | null
+    if (!card) return
+    el.scrollTo({ left: i * (card.offsetWidth + 20), behavior: 'smooth' })
+  }
 
   return (
     <section id="experiencias" className="relative bg-jungle-950 py-24 md:py-32 grain">
@@ -27,30 +68,76 @@ export function Experiences() {
           <p className="mt-5 text-lg text-sand-100/70">{t.experiences.subtitle}</p>
         </Reveal>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {t.experiences.items.map((item, i) => (
-            <Reveal key={item.title} delay={(i % 3) * 0.12}>
-              <article className="group relative h-[420px] overflow-hidden rounded-3xl">
+        <div className="relative mt-12">
+          <div
+            ref={scroller}
+            onScroll={onScroll}
+            role="region"
+            aria-label={t.experiences.title}
+            tabIndex={0}
+            className="scrollbar-hide -mx-5 flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-smooth px-5 pb-2 md:-mx-8 md:px-8"
+          >
+            {t.experiences.items.map((item, i) => (
+              <article
+                key={item.title}
+                className="group relative h-[460px] w-[80vw] max-w-[340px] shrink-0 snap-center overflow-hidden rounded-3xl sm:w-[340px]"
+              >
                 <img
                   src={expImages[i]}
                   alt={item.title}
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-110"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-jungle-950/95 via-jungle-950/25 to-transparent" />
-                <span className="absolute top-5 right-6 font-display text-5xl font-light text-sand-100/25 group-hover:text-sand-100/60 transition-colors duration-500">
+                {/* Degradado fuerte abajo: la leyenda se lee siempre, sin pasar el dedo */}
+                <div className="absolute inset-0 bg-gradient-to-t from-jungle-950 via-jungle-950/45 to-transparent" />
+                <span className="absolute right-6 top-5 font-display text-5xl font-light text-sand-100/30">
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 <div className="absolute bottom-0 left-0 right-0 p-7">
-                  <h3 className="font-display text-2xl font-semibold text-sand-50">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-sand-100/75 opacity-0 translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
-                    {item.text}
-                  </p>
+                  <h3 className="font-display text-2xl font-semibold text-sand-50">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-sand-100/85">{item.text}</p>
                 </div>
               </article>
-            </Reveal>
+            ))}
+          </div>
+
+          {/* Flechas: utiles con mouse, el celular se desliza con el dedo */}
+          <button
+            onClick={() => scrollBy(-1)}
+            aria-label={t.experiences.prev}
+            disabled={atStart}
+            className={cn(
+              'absolute -left-3 top-1/2 hidden -translate-y-1/2 place-items-center rounded-full border border-sand-100/25 bg-jungle-950/80 p-3 text-sand-50 backdrop-blur transition-opacity hover:bg-jungle-900 md:grid',
+              atStart && 'pointer-events-none opacity-0',
+            )}
+          >
+            <ChevronLeft size={22} />
+          </button>
+          <button
+            onClick={() => scrollBy(1)}
+            aria-label={t.experiences.next}
+            disabled={atEnd}
+            className={cn(
+              'absolute -right-3 top-1/2 hidden -translate-y-1/2 place-items-center rounded-full border border-sand-100/25 bg-jungle-950/80 p-3 text-sand-50 backdrop-blur transition-opacity hover:bg-jungle-900 md:grid',
+              atEnd && 'pointer-events-none opacity-0',
+            )}
+          >
+            <ChevronRight size={22} />
+          </button>
+        </div>
+
+        <div className="mt-7 flex items-center justify-center gap-2.5">
+          {t.experiences.items.map((item, i) => (
+            <button
+              key={item.title}
+              onClick={() => goTo(i)}
+              aria-label={item.title}
+              aria-current={i === index}
+              className={cn(
+                'h-2 rounded-full transition-all duration-300',
+                i === index ? 'w-7 bg-sand-300' : 'w-2 bg-sand-100/30 hover:bg-sand-100/60',
+              )}
+            />
           ))}
         </div>
       </div>

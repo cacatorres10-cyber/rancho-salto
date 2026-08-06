@@ -75,10 +75,11 @@ export function InstagramSection() {
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 flex items-center justify-center bg-jungle-950/0 transition-colors duration-500 group-hover:bg-jungle-950/50">
+                  {/* El icono se ve siempre para que en celular se note que abre Instagram */}
+                  <div className="absolute inset-0 flex items-end justify-end bg-jungle-950/0 p-3 transition-colors duration-500 group-hover:bg-jungle-950/40">
                     <Instagram
-                      size={30}
-                      className="text-sand-50 opacity-0 scale-75 transition-all duration-500 group-hover:opacity-100 group-hover:scale-100"
+                      size={22}
+                      className="text-sand-50 drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)] transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
                 </a>

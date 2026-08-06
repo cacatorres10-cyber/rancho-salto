@@ -94,7 +94,7 @@ export function PhotoAlbum({ open, onClose }: PhotoAlbumProps) {
               <button
                 key={p.src}
                 onClick={() => setZoom(i)}
-                className="group relative aspect-square overflow-hidden rounded-xl"
+                className="group relative aspect-square overflow-hidden rounded-xl text-left"
                 aria-label={p[lang]}
               >
                 <img
@@ -104,7 +104,12 @@ export function PhotoAlbum({ open, onClose }: PhotoAlbumProps) {
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   style={{ objectPosition: p.pos }}
                 />
-                <span className="absolute inset-0 bg-jungle-950/0 transition-colors group-hover:bg-jungle-950/30" />
+                {/* La leyenda se ve siempre, tambien en celular */}
+                <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-jungle-950/90 via-jungle-950/50 to-transparent px-3 pb-2.5 pt-8">
+                  <span className="block text-[11px] font-medium leading-tight text-sand-50 sm:text-xs">
+                    {p[lang]}
+                  </span>
+                </span>
               </button>
             ))}
           </div>
