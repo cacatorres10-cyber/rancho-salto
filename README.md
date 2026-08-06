@@ -41,6 +41,10 @@ ffmpeg -i media-fonte/video.mp4 -vf "fps=1/4,scale=300:-1,tile=5x5" -frames:v 1 
 
 **Único ponto ainda com foto de banco de imagens**: o card "Paseos a caballo". Quando houver foto de cavalos do rancho, troque `IMG.horse` em `src/assets/media.ts`.
 
+## Regra de ouro: nada só no hover
+
+A maioria dos visitantes chega pelo celular, onde não existe passar o mouse. Então legenda, texto de card e ícone de ação precisam estar visíveis parados. A seção "Experiencias" é um carrossel que desliza com o dedo (scroll-snap nativo, com setas e bolinhas para quem usa mouse) e todas as legendas ficam sempre à vista.
+
 ## Álbum de fotos
 
 Todas as fotos do rancho ficam numa lista só, em [src/data/gallery.ts](src/data/gallery.ts). Dela saem tanto a galeria giratória (as 8 primeiras) quanto o álbum completo, que abre pelo botão "Ver todas las fotos" na seção do vídeo do rancho.
