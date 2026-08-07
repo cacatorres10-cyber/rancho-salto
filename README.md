@@ -41,6 +41,19 @@ ffmpeg -i media-fonte/video.mp4 -vf "fps=1/4,scale=300:-1,tile=5x5" -frames:v 1 
 
 **Único ponto ainda com foto de banco de imagens**: o card "Paseos a caballo". Quando houver foto de cavalos do rancho, troque `IMG.horse` em `src/assets/media.ts`.
 
+## Tema: como voltar ao verde e branco
+
+O site está com **fundo todo verde**. Para voltar ao visual anterior (seções verdes e brancas alternadas), apague `data-theme="green"` da tag `<html>` no [index.html](index.html), rode `npm run build` e republique. É só isso.
+
+As cores vivem em variáveis CSS no topo de [src/index.css](src/index.css): o bloco `:root` é o tema verde e branco, e `:root[data-theme='green']` é o todo verde. Os componentes usam os tokens `bg-soft`, `text-eyebrow`, `text-accent`, `bg-cta`/`text-cta-foreground`, `bg-card`, `text-foreground` e `text-muted-foreground`, então nenhum componente precisa ser tocado para trocar de tema.
+
+A versão anterior também está salva na tag `v1-verde-y-blanco`:
+
+```bash
+git checkout v1-verde-y-blanco   # ver como era
+git checkout main                # voltar
+```
+
 ## Regra de ouro: nada só no hover
 
 A maioria dos visitantes chega pelo celular, onde não existe passar o mouse. Então legenda, texto de card e ícone de ação precisam estar visíveis parados. A seção "Experiencias" é um carrossel que desliza com o dedo (scroll-snap nativo, com setas e bolinhas para quem usa mouse) e todas as legendas ficam sempre à vista.
