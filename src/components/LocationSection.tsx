@@ -13,19 +13,19 @@ export function LocationSection() {
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div>
             <Reveal>
-              <p className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-sand-600">
+              <p className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-eyebrow">
                 {t.location.eyebrow}
               </p>
-              <h2 className="font-display text-4xl md:text-5xl font-semibold leading-tight text-jungle-900">
+              <h2 className="font-display text-4xl md:text-5xl font-semibold leading-tight text-foreground">
                 {t.location.title}
               </h2>
               <p className="mt-5 text-lg text-muted-foreground">{t.location.text}</p>
-              <p className="mt-4 flex items-start gap-2.5 text-jungle-800 font-medium">
-                <MapPin size={20} className="mt-0.5 shrink-0 text-jungle-600" />
+              <p className="mt-4 flex items-start gap-2.5 text-foreground font-medium">
+                <MapPin size={20} className="mt-0.5 shrink-0 text-accent" />
                 {ADDRESS}
               </p>
-              <p className="mt-2 flex items-start gap-2.5 text-jungle-800 font-medium">
-                <Phone size={20} className="mt-0.5 shrink-0 text-jungle-600" />
+              <p className="mt-2 flex items-start gap-2.5 text-foreground font-medium">
+                <Phone size={20} className="mt-0.5 shrink-0 text-accent" />
                 {PHONES.join(' / ')}
               </p>
             </Reveal>
@@ -34,7 +34,7 @@ export function LocationSection() {
               {t.location.distances.map((d, i) => (
                 <Reveal key={d.place} delay={0.1 + i * 0.07}>
                   <div className="flex items-center justify-between rounded-xl border border-border bg-card px-5 py-4">
-                    <span className="font-medium text-jungle-900">{d.place}</span>
+                    <span className="font-medium text-foreground">{d.place}</span>
                     <span className="flex items-center gap-1.5 text-sm text-muted-foreground">
                       <Clock size={15} />
                       {d.time}
@@ -49,7 +49,7 @@ export function LocationSection() {
                 href={MAPS_LINK}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-8 inline-flex items-center gap-2 font-semibold text-jungle-700 hover:text-jungle-500 transition-colors"
+                className="mt-8 inline-flex items-center gap-2 font-semibold text-accent hover:opacity-75 transition-colors"
               >
                 {t.location.cta}
                 <ExternalLink size={17} />

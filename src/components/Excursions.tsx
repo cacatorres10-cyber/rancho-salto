@@ -17,10 +17,10 @@ export function Excursions() {
     <section id="excursiones" className="py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-sand-600">
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-eyebrow">
             {t.excursions.eyebrow}
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-semibold leading-tight text-jungle-900">
+          <h2 className="font-display text-4xl md:text-5xl font-semibold leading-tight text-foreground">
             {t.excursions.title}
           </h2>
           <p className="mt-5 text-lg text-muted-foreground">{t.excursions.subtitle}</p>
@@ -54,15 +54,15 @@ export function Excursions() {
                   </div>
 
                   <div className="flex flex-1 flex-col p-7">
-                    <h3 className="font-display text-2xl font-semibold text-jungle-900">
+                    <h3 className="font-display text-2xl font-semibold text-foreground">
                       {c.name}
                     </h3>
-                    <p className="mt-1 text-sm font-medium text-sand-600">{c.tagline}</p>
+                    <p className="mt-1 text-sm font-medium text-eyebrow">{c.tagline}</p>
                     <p className="mt-3 flex-1 leading-relaxed text-muted-foreground">{c.short}</p>
 
                     <button
                       onClick={() => setActive(exc)}
-                      className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-jungle-900 px-6 py-3.5 font-semibold text-sand-100 transition-colors hover:bg-jungle-700"
+                      className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-cta px-6 py-3.5 font-semibold text-cta-foreground transition-opacity hover:opacity-90"
                     >
                       {t.excursions.details}
                       <ArrowRight
@@ -120,20 +120,20 @@ export function Excursions() {
 
               <p className="mt-6 leading-relaxed text-muted-foreground">{copy.description}</p>
 
-              <h4 className="mt-8 font-display text-lg font-semibold text-jungle-900">
+              <h4 className="mt-8 font-display text-lg font-semibold text-foreground">
                 {t.excursions.includes}
               </h4>
               <ul className="mt-3 grid gap-2 sm:grid-cols-2">
                 {copy.includes.map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-muted-foreground">
-                    <Check size={18} className="mt-0.5 shrink-0 text-jungle-600" />
+                    <Check size={18} className="mt-0.5 shrink-0 text-accent" />
                     {item}
                   </li>
                 ))}
               </ul>
 
-              <h4 className="mt-8 flex items-center gap-2 font-display text-lg font-semibold text-jungle-900">
-                <Backpack size={19} className="text-jungle-600" />
+              <h4 className="mt-8 flex items-center gap-2 font-display text-lg font-semibold text-foreground">
+                <Backpack size={19} className="text-accent" />
                 {t.excursions.bring}
               </h4>
               <p className="mt-2 text-muted-foreground">{copy.bring.join(' · ')}</p>
@@ -146,7 +146,7 @@ export function Excursions() {
                 )}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-8 flex w-full items-center justify-center gap-2.5 rounded-xl bg-jungle-900 px-8 py-4 font-semibold text-sand-100 transition-colors hover:bg-jungle-700"
+                className="mt-8 flex w-full items-center justify-center gap-2.5 rounded-xl bg-cta px-8 py-4 font-semibold text-cta-foreground transition-opacity hover:opacity-90"
               >
                 {t.excursions.book}
               </a>

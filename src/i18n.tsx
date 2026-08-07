@@ -42,7 +42,7 @@ const es = {
   experiences: {
     eyebrow: 'Experiencias',
     title: 'Un día aquí rinde como tres',
-    subtitle: 'Desliza y escoge tu aventura. O vívelas todas, que el rancho da para eso.',
+    subtitle: 'Un día aquí rinde como tres. Desliza y escoge tu aventura, o vívelas todas.',
     prev: 'Experiencia anterior',
     next: 'Experiencia siguiente',
     items: [
@@ -259,7 +259,7 @@ const en: typeof es = {
   experiences: {
     eyebrow: 'Experiences',
     title: 'One day here feels like three',
-    subtitle: 'Swipe and pick your adventure. Or live them all, there is room for that.',
+    subtitle: 'One day here feels like three. Swipe and pick your adventure, or live them all.',
     prev: 'Previous experience',
     next: 'Next experience',
     items: [

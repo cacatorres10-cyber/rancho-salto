@@ -76,12 +76,12 @@ export function PhotoAlbum({ open, onClose }: PhotoAlbumProps) {
         </div>
       ) : (
         <div className="p-6 sm:p-8">
-          <p className="text-xs font-bold uppercase tracking-[0.3em] text-sand-600">
+          <p className="text-xs font-bold uppercase tracking-[0.3em] text-eyebrow">
             {t.album.eyebrow}
           </p>
           <h3
             id="album-title"
-            className="mt-1 font-display text-3xl font-semibold text-jungle-900 sm:text-4xl"
+            className="mt-1 font-display text-3xl font-semibold text-foreground sm:text-4xl"
           >
             {t.album.title}
           </h3>

@@ -10,14 +10,14 @@ export function InstagramSection() {
   const { t } = useLang()
 
   return (
-    <section className="py-24 md:py-28 bg-sand-100/60">
+    <section className="py-24 md:py-28 bg-soft">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <Reveal>
-            <p className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-sand-600">
+            <p className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-eyebrow">
               {t.instagram.eyebrow}
             </p>
-            <h2 className="font-display text-4xl md:text-5xl font-semibold text-jungle-900">
+            <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground">
               {t.instagram.title}
             </h2>
             <p className="mt-4 max-w-xl text-lg text-muted-foreground">{t.instagram.text}</p>
@@ -27,7 +27,7 @@ export function InstagramSection() {
               href={INSTAGRAM_URL}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2.5 rounded-full bg-jungle-900 px-7 py-3.5 font-semibold text-sand-100 hover:bg-jungle-700 transition-colors"
+              className="inline-flex items-center gap-2.5 rounded-full bg-cta px-7 py-3.5 font-semibold text-cta-foreground hover:opacity-90 transition-colors"
             >
               <Instagram size={19} />
               {t.instagram.cta} {INSTAGRAM_HANDLE}

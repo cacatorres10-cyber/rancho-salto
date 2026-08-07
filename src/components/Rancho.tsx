@@ -81,19 +81,15 @@ export function Rancho() {
           </div>
         </Reveal>
 
-        {/* 2. Las fotos, bajo el subtitulo de experiencias */}
-        <div id="experiencias" className="mt-20 scroll-mt-24 md:mt-24">
+        {/* 2. Las fotos: un solo titulo para toda la seccion, sin repetir encabezado */}
+        <div id="experiencias" className="mt-14 scroll-mt-24 md:mt-16">
           <Reveal>
-            <p className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-sand-300">
-              {t.experiences.eyebrow}
+            <p className="max-w-2xl font-display text-2xl font-medium italic leading-snug text-sand-200 md:text-3xl">
+              {t.experiences.subtitle}
             </p>
-            <h3 className="max-w-2xl font-display text-3xl md:text-5xl font-semibold leading-tight text-sand-50">
-              {t.experiences.title}
-            </h3>
-            <p className="mt-4 max-w-2xl text-lg text-sand-100/70">{t.experiences.subtitle}</p>
           </Reveal>
 
-          <div className="relative mt-12">
+          <div className="relative mt-8">
             <div
               ref={scroller}
               onScroll={onScroll}

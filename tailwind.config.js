@@ -19,6 +19,14 @@ export default {
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))',
         },
+        // Tokens que cambian con el tema (ver index.css)
+        soft: 'hsl(var(--soft))',
+        eyebrow: 'hsl(var(--eyebrow))',
+        accent: 'hsl(var(--accent))',
+        cta: {
+          DEFAULT: 'hsl(var(--cta))',
+          foreground: 'hsl(var(--cta-foreground))',
+        },
         jungle: {
           50: '#f2f7f3',
           100: '#dfece2',

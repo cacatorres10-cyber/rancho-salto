@@ -9,13 +9,13 @@ export function Faq() {
   const [openIdx, setOpenIdx] = useState<number | null>(0)
 
   return (
-    <section className="py-24 md:py-28 bg-sand-100/60">
+    <section className="py-24 md:py-28 bg-soft">
       <div className="mx-auto max-w-3xl px-5 md:px-8">
         <Reveal className="text-center">
-          <p className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-sand-600">
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-eyebrow">
             {t.faq.eyebrow}
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-semibold text-jungle-900">
+          <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground">
             {t.faq.title}
           </h2>
         </Reveal>
@@ -31,13 +31,13 @@ export function Faq() {
                     className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
                     aria-expanded={open}
                   >
-                    <span className="font-display text-lg font-semibold text-jungle-900">
+                    <span className="font-display text-lg font-semibold text-foreground">
                       {item.q}
                     </span>
                     <ChevronDown
                       size={20}
                       className={cn(
-                        'shrink-0 text-jungle-600 transition-transform duration-300',
+                        'shrink-0 text-accent transition-transform duration-300',
                         open && 'rotate-180',
                       )}
                     />

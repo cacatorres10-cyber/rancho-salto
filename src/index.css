@@ -2,7 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================================
+   TEMA DEL SITIO
+   ------------------------------------------------------------
+   Por defecto: fondo TODO VERDE.
+   Para volver al tema verde y blanco alternado, quita el atributo
+   data-theme="green" del <html> en index.html. Nada mas.
+   ============================================================ */
 :root {
+  /* Tema verde y blanco (el de antes) */
   --background: 40 33% 96%;
   --foreground: 150 25% 10%;
   --card: 40 33% 98%;
@@ -12,6 +20,29 @@
   --primary: 150 33% 22%;
   --primary-foreground: 40 33% 96%;
   --border: 150 15% 82%;
+  --soft: 40 33% 93%;
+  --eyebrow: 30 45% 46%;
+  --accent: 149 34% 24%;
+  --cta: 153 33% 16%;
+  --cta-foreground: 40 33% 91%;
+}
+
+:root[data-theme='green'] {
+  /* Tema todo verde */
+  --background: 152 38% 9%;
+  --foreground: 42 50% 96%;
+  --card: 153 33% 15%;
+  --card-foreground: 42 50% 96%;
+  --muted: 153 30% 18%;
+  --muted-foreground: 40 25% 78%;
+  --primary: 38 46% 70%;
+  --primary-foreground: 152 38% 9%;
+  --border: 150 16% 26%;
+  --soft: 152 36% 11%;
+  --eyebrow: 38 46% 70%;
+  --accent: 38 46% 70%;
+  --cta: 38 46% 70%;
+  --cta-foreground: 152 38% 9%;
 }
 
 html {

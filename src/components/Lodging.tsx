@@ -13,10 +13,10 @@ export function Lodging() {
     <section id="alojamiento" className="py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-sand-600">
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-eyebrow">
             {t.lodging.eyebrow}
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-semibold leading-tight text-jungle-900">
+          <h2 className="font-display text-4xl md:text-5xl font-semibold leading-tight text-foreground">
             {t.lodging.title}
           </h2>
           <p className="mt-5 text-lg text-muted-foreground">{t.lodging.subtitle}</p>
@@ -38,7 +38,7 @@ export function Lodging() {
                   </span>
                 </div>
                 <div className="flex flex-1 flex-col p-7">
-                  <h3 className="font-display text-2xl font-semibold text-jungle-900">
+                  <h3 className="font-display text-2xl font-semibold text-foreground">
                     {item.title}
                   </h3>
                   <p className="mt-3 flex-1 leading-relaxed text-muted-foreground">{item.text}</p>
@@ -50,7 +50,7 @@ export function Lodging() {
                     )}
                     target="_blank"
                     rel="noreferrer"
-                    className="mt-6 inline-flex items-center gap-2 font-semibold text-jungle-700 hover:text-jungle-500 transition-colors"
+                    className="mt-6 inline-flex items-center gap-2 font-semibold text-accent hover:opacity-75 transition-colors"
                   >
                     {t.lodging.cta}
                     <ArrowUpRight size={18} className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
