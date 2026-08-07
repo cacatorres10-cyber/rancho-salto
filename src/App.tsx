@@ -2,8 +2,7 @@ import { LangProvider } from '@/i18n'
 import { Navbar } from '@/components/Navbar'
 import { Hero } from '@/components/Hero'
 import { Marquee } from '@/components/Marquee'
-import { About } from '@/components/About'
-import { Experiences } from '@/components/Experiences'
+import { Rancho } from '@/components/Rancho'
 import { Excursions } from '@/components/Excursions'
 import { Lodging } from '@/components/Lodging'
 import { GallerySection } from '@/components/GallerySection'
@@ -22,8 +21,7 @@ function App() {
       <main>
         <Hero />
         <Marquee />
-        <About />
-        <Experiences />
+        <Rancho />
         <Excursions />
         <Lodging />
         <GallerySection />

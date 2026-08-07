@@ -38,20 +38,6 @@ const es = {
     title: 'Aquí el tiempo va más lento',
     p1: 'Una loma entera de verde en Anamuyita, a veinte minutos de Higüey. Palmeras de verdad, agua que baja fresca de la montaña y gente que te recibe como si volvieras a casa.',
     p2: 'Ven por el día y vete con el río todavía en la piel. O quédate a dormir, cuando el rancho se queda en silencio y salen esas estrellas que en la ciudad ya nadie ve.',
-    features: [
-      {
-        title: 'Naturaleza sin filtro',
-        text: 'Montaña, río y palmares tal como son. Lo único que se edita aquí son las fotos que te llevas.',
-      },
-      {
-        title: 'Le sirve a todo el mundo',
-        text: 'Los muchachos en la piscina, los grandes en la sombra y nadie mirando el reloj.',
-      },
-      {
-        title: 'Comida de fogón',
-        text: 'Sancocho que lleva horas al fuego, chivo guisado y arroz que sabe a domingo en casa de la abuela.',
-      },
-    ],
   },
   experiences: {
     eyebrow: 'Experiencias',
@@ -83,6 +69,14 @@ const es = {
       {
         title: 'Palapa para grupos',
         text: 'Techo de cana, lámpara encendida y espacio de sobra. Aquí caben la excursión, el cumpleaños y la familia completa.',
+      },
+      {
+        title: 'Para los muchachos',
+        text: 'Columpios, grama y espacio de sobra para correr. Aquí los niños se cansan antes que tú.',
+      },
+      {
+        title: 'Grupos y excursiones',
+        text: 'Colegios, empresas y familias completas. El rancho está hecho para recibirlos a todos juntos.',
       },
     ],
   },
@@ -261,20 +255,6 @@ const en: typeof es = {
     title: 'Time runs slower up here',
     p1: 'A whole green hillside in Anamuyita, twenty minutes from Higüey. Real palm trees, water running cool off the mountain and people who welcome you like family.',
     p2: 'Come for the day and leave with the river still on your skin. Or stay the night, when the ranch goes quiet and out come the stars the city stopped showing you.',
-    features: [
-      {
-        title: 'Nature, unfiltered',
-        text: 'Mountain, river and palm groves just as they are. The only thing edited here are the photos you take home.',
-      },
-      {
-        title: 'Works for everyone',
-        text: 'Kids in the pool, grown ups in the shade and nobody watching the clock.',
-      },
-      {
-        title: 'Cooked over fire',
-        text: 'Sancocho that spent hours on the flame, stewed goat and rice that tastes like Sunday at grandma’s.',
-      },
-    ],
   },
   experiences: {
     eyebrow: 'Experiences',
@@ -306,6 +286,14 @@ const en: typeof es = {
       {
         title: 'Palapa for groups',
         text: 'Thatched roof, lights on and room to spare. The excursion, the birthday and the whole family fit in here.',
+      },
+      {
+        title: 'For the kids',
+        text: 'Swings, grass and plenty of room to run. Here the kids wear out before you do.',
+      },
+      {
+        title: 'Groups and excursions',
+        text: 'Schools, companies and whole families. The ranch is built to host everyone together.',
       },
     ],
   },
